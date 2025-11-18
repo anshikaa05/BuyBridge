@@ -1,0 +1,30 @@
+.navbar {
+  position: fixed; /* stays on top while scrolling */
+  top: 0;
+  left: 0;
+  width: 100%; /* full width */
+  background-color: #fff; /* change as per theme */
+  display: flex;
+  justify-content: center; /* center items horizontally */
+  align-items: center; /* center items vertically */
+  gap: 2rem; /* space between links */
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* subtle shadow */
+  z-index: 1000; /* make sure it’s on top */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a.active {
+  color: #007bff; /* highlight active link */
+}
+
+.navbar a:hover {
+  color: #007bff;
+}

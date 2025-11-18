@@ -1,0 +1,54 @@
+.top{
+  position: fixed; /* stays on top while scrolling */
+  top: 1.5rem;
+  left: 0;
+  width: 100%; /* full width */
+  background-color: #121111; /* change as per theme */
+  display: flex;
+  justify-content: center; /* center items horizontally */
+  align-items: center; /* center items vertically */
+  padding: 0.3rem;
+  /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); subtle shadow */
+  z-index: 1000; /* make sure it’s on top */
+}
+.search-box {
+  position: relative;     /* so top works */
+  margin-top: 2rem;       /* better than top unless absolutely positioned */
+  z-index: 1000;
+  box-sizing: border-box; /* usually recommended */
+}
+
+.search-box input {
+  top:1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.search-box ul {
+  position: absolute;      /* dropdown floats below input */
+  top: 110%;               /* just below the input */
+  left: 0;
+  width: 100%;
+  background: rgb(16, 15, 15);
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  text-align: left;
+}
+
+.search-box li {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.search-box li:hover {
+  background: #121111;
+}
